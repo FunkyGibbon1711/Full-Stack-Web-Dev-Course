@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <button type="button">Please do not submit the form</button>
+        <p><label for="username">Enter a Username</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p><label for="password">Enter a password</label>
+            <input id="password" type="password" placeholder="password">
+        </p>
+        <button>IN THE MIDDLE</button>
+        <p><label for="colour">Select a colour</label>
+            <input id="colour" type="color">
+        </p>
+        <p><label for="number">Select a number</label>
+            <input id="number" type="number" placeholder="Enter a number" min="1" max="100">
+        </p>
+        <button type="submit">SUBMIT</button>
+    </form>
+    <h2>Hijacking website searches</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <h3>Search Google</h3>
+    <form action="https://www.google.co.uk/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h2>More types of input</h2>
+    <h3>Checkboxes</h3>
+    <p>Below are two checkboxes to be selected:</p>
+    <form action="/whatever">
+        <p>
+            <input type="checkbox" name="Checkbox 1" id="Checkbox 1">
+            <label for="Checkbox 1">A checkbox that can be ticked</label><br>
+            <input type="checkbox" name="Checkbox 2" id="Checkbox 2" checked>
+            <label for="Checkbox 2">A checkbox that is selected as default</label><br>
+        </p>
+        <h3>Radio Buttons</h3>
+        <p>Can only select one option out of the list. Group options together by giving them the same `name` attribute
+        </p>
+        <p>
+            <label for="Radio 1">Option 1:</label>
+            <input type="radio" name="Radio 1" id="Radio 1" value="Opt 1"><br>
+            <label for="Radio 2">Option 2:</label>
+            <input type="radio" name="Radio 1" id="Radio 2" value="Opt 2"><br>
+            <label for="Radio 3">Option 3:</label>
+            <input type="radio" name="Radio 1" id="Radio 3" value="Opt 3"><br>
+        </p>
+        <h3>Select and Option Elements</h3>
+        <p>
+            <label for="meal">Please select a meal</label>
+            <select name="meal" id="meal">
+                <option value="">--Please choose an option--</option>
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="meat">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="volume">Set the volume using the slider:</label>
+            <input type="range" id="volume" min="0" max="100" name="volume_level" step="5" value="50">
+        </p>
+        <button type="submit">Submit</button>
+        <p>
+            <label for="textbox">You can enter a multi-line input below:</label><br>
+            <textarea name="box_of_text" id="textbox" cols="30" rows="10" placeholder="Type something here"></textarea>
+        </p>
+    </form>
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter first name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" minlength="4" maxlength="20">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <button type="submit">Submit form</button>
+    </form>
+</body>
+
+</html>
