@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: orangered wavy underline;
+    letter-spacing: 15px;
+    font-size: 40px;
+}
+
+p {
+    text-align: left;
+    line-height: 1.5;
+    /* font-family: Segoe UI; */
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    /* font-family: papyrus; */
+}
