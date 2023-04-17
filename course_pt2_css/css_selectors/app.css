@@ -1,0 +1,81 @@
+/* This is an element selector - setting a CSS property for a specific element
+h1 {
+    color: purple
+} */
+/* Applies to all elements */
+* {
+    color: rgb(204, 39, 66);
+    /* background-color: cyan; */
+}
+
+body {
+    background-color: darkblue;
+}
+
+button {
+    font-size: 30px;
+    background-color: slateblue;
+}
+
+/* Listed items to apply same style to multiple elements */
+h1,
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: yellow;
+}
+
+/* CSS ID only applies to item with `id=dark_button` */
+#dark_button {
+    background-color: green;
+    color: whitesmoke;
+}
+
+input {
+    background-color: black;
+}
+
+span {
+    color: black;
+    background-color: white;
+}
+
+/* CSS class only applied to items with `class=tags` */
+.tags {
+    color: green;
+    background-color: red;
+    font-size: 20px;
+}
+
+li a {
+    color: salmon;
+}
+
+span li {
+    color: yellowgreen;
+}
+
+/* Applied CSS style to p's immediately preceeded by h1*/
+h1+p {
+    color: blue;
+    background-color: magenta;
+    font-weight: bold;
+}
+
+/* Applies CSS styles to buttons that are direct descendants of div elements */
+div>button {
+    background-color: black;
+    color: white;
+}
+
+/* Only applies style to inputs of type password*/
+input[type="password"] {
+    color: greenyellow
+}
+
+/* Any anchor elements containing the word `google` */
+a[href*="google"] {
+    color: white;
+    background-color: magenta
+}
